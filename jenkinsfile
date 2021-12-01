@@ -19,7 +19,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'pytest --verbose --junit-xml test-reports/results.xml mycodes/hello.py'
+                sh 'pytest --verbose --junit-xml test-reports/results.xml mycodes/test_hello.py'
             }
             post {
                 always {
